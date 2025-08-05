@@ -7,6 +7,6 @@ return Migration::createTable('email_rules', function (Blueprint $table) {
   $table->increments('id');
   $table->integer('rule_type');
   $table->string('name');
-  $table->string('value');
+  $table->text('value');
   $table->boolean('active');
 });
